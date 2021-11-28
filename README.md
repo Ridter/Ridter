@@ -4,5 +4,9 @@
   <img src="https://github-readme-stats.mrdulin.vercel.app/api?username=Ridter&show_icons=true&hide_border=true&hide=prs&theme=buefy">
 </p>
 
-## Visit Count
-![Visitor Count](https://profile-counter.glitch.me/Ridter/count.svg)
+<table>
+  <tr>
+    <td>You are visitor</td>
+    <td><img src="https://profile-counter.glitch.me/Ridter/count.svg" alt="" /></td>
+  </tr>
+</table>
