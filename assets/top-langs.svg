@@ -1,8 +1,6 @@
 
       <svg
-        width="300"
-        height="165"
-        viewBox="0 0 300 165"
+        width="304" height="170" viewBox="0 0 304 170"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -105,12 +103,11 @@
           x="0.5"
           y="0.5"
           rx="12"
-          height="99%"
-          stroke="#e4e2e2"
-          width="299"
+          height="1693"
           fill="url(#gradient)"
           stroke-opacity="0"
         />
+<g transform="translate(2, 2)">
 
         
       <g
@@ -250,5 +247,6 @@
     </svg>
   
         </g>
-      </svg>
+      </g>
+</svg>
     

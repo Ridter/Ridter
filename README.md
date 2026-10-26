@@ -5,9 +5,7 @@
 </a>
 <br>
 
-<img align="left" width="49%" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/stats.svg" alt="GitHub stats" />
-<img align="right" width="49%" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/top-langs.svg" alt="Most used languages" />
-<br clear="both"/>
+<img height="155" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/stats.svg" alt="GitHub stats" /> <img height="155" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/top-langs.svg" alt="Most used languages" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/github-contribution-grid-snake-dark.svg">

@@ -33,6 +33,47 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
+      - name: Match card sizes
+        run: |
+          python3 << 'PY'
+          import re
+          from pathlib import Path
+
+          files = [Path("assets/stats.svg"), Path("assets/top-langs.svg")]
+          parsed = []
+          for path in files:
+              text = path.read_text()
+              match = re.search(
+                  r'<svg\s+width="(\d+)"\s+height="(\d+)"\s+viewBox="0 0 (\d+) (\d+)"',
+                  text,
+              )
+              parsed.append((path, text, int(match.group(1)), int(match.group(2))))
+
+          width = max(item[2] for item in parsed)
+          height = max(item[3] for item in parsed)
+          for path, text, own_w, own_h in parsed:
+              dx = (width - own_w) // 2
+              dy = (height - own_h) // 2
+              text = re.sub(
+                  r'(<svg\s+)width="\d+"\s+height="\d+"\s+viewBox="0 0 \d+ \d+"',
+                  rf'\1width="{width}" height="{height}" viewBox="0 0 {width} {height}"',
+                  text,
+                  count=1,
+              )
+              text = re.sub(
+                  r'(data-testid="card-bg"[\s\S]*?height=")[^"]+("[\s\S]*?width=")[^"]+"',
+                  rf'\g<1>{height - 1}\2{width - 1}"',
+                  text,
+                  count=1,
+              )
+              if dx or dy:
+                  end = text.find("/>", text.find('data-testid="card-bg"')) + 2
+                  text = text[:end] + f'\n<g transform="translate({dx}, {dy})">' + text[end:]
+                  last = text.rfind("</svg>")
+                  text = text[:last] + "</g>\n" + text[last:]
+              path.write_text(text)
+          PY
+
       - name: Generate contribution snake
         uses: Platane/snk/svg-only@v3
         with:
