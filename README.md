@@ -5,8 +5,12 @@
 </a>
 <br>
 
+<img align="top" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/stats.svg" alt="GitHub stats" />
+<img align="top" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/top-langs.svg" alt="Most used languages" />
+<br>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yhy0/yhy0/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yhy0/yhy0/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/yhy0/yhy0/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ridter/Ridter/main/assets/github-contribution-grid-snake.svg">
 </picture>
