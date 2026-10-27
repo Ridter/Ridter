@@ -7,7 +7,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">evi1cg&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 12709, Total Commits  : 1498, Total PRs: 11, Total Issues: 110</desc>
+        <desc id="descId">Total Stars Earned: 12598, Total Commits  : 1500, Total PRs: 11, Total Issues: 110</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -71,7 +71,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 91.11219338835615;
+        stroke-dashoffset: 91.09452987051466;
       }
     }
   
@@ -161,7 +161,7 @@
         x="174.01"
         y="12.5"
         data-testid="stars"
-      >12.7k</text>
+      >12.6k</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
